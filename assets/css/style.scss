@@ -1,0 +1,19 @@
+---
+# front matter
+---
+
+// Custom Variables
+@import 'variables';
+@import 'settings';
+
+// Foundation 6
+@import 'foundation';
+
+// Include All of Foundation 6
+@include foundation-everything;
+
+// Font-Awesome
+@import 'font-awesome/font-awesome';
+
+// Google fonts
+//@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic);

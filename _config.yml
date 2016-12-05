@@ -1,0 +1,36 @@
+# Site settings
+title: Calibre Collies
+email: webmaster@CalibreCollies.com
+description: > # this means to ignore newlines until "baseurl:"
+  Calibre Collies - Quality Smooth and Rough Coat Collies
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://CalibreCollies.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+collections:
+  - available
+  - pedigrees
+
+## Customer Vars
+#ga_id:             ##-########-###
+site_name: Calibre Collies
+site_description: Calibre Collies - Quality Smooth and Rough Coat Collies
+site_copyright: Copyright (c) 2016 Calibre Collies
+site_url: https://calibrecollies.com
+site_email: webmaster@calibrecollies.com
+site_phone: (555) 555-1234
+
+sass:
+  sass_dir: ./assets/css
+  style: :compressed
