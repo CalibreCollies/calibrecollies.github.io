@@ -1,0 +1,30 @@
+---
+layout: default
+title: Pedigrees
+permalink: /pedigrees/
+---
+<div class="row pedigrees">
+  <div class="small-12 columns">
+    <h2>Pedigrees</h2>
+    {% for post in site.pedigrees %}
+      {% if post.image %}
+      <div class="row">
+        <div class="small-8 columns">
+          <h4>{{ post.title }}</h4>
+          {{ post.content }}
+        </div>
+        <div class="small-4 columns">
+          <img src="/assets/pedigrees/{{ post.image }}" />
+        </div>
+      </div>
+      {% else %}
+      <div class="row post">
+        <div class="small-12 columns">
+          <h4>{{ post.title }}</h4>
+          {{ post.content }}
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

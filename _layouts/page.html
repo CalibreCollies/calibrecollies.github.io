@@ -3,11 +3,18 @@ layout: default
 ---
 <div class="page">
   <div class="row">
-    <div class="medium-10 push-1 columns">
-
     <h2 class="post-title">{{ page.title }}</h2>
-
+    {% if page.photo %}
+    <div class="small-12 medium-8 columns">
     {{ content }}
     </div>
+    <div class="small-4 columns hide-for-small-only">
+      <img src="{{ page.photo }}" />
+    </div>
+    {% else %}
+    <div class="small-12 columns">
+    {{ content }}
+    </div>
+    {% endif %}
   </div>
 </div>
