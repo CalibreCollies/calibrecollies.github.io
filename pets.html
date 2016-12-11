@@ -1,9 +1,9 @@
 ---
 layout: collection
-title: Pedigrees
-permalink: /pedigrees/
+title: Pets
+permalink: /pets/
 ---
-{% for item in site.pedigrees %}
+{% for item in site.pets %}
   {% if item.image %}
   <div class="row">
     <div class="small-8 columns">
@@ -11,7 +11,7 @@ permalink: /pedigrees/
       {{ item.content }}
     </div>
     <div class="small-4 columns">
-      <img src="/assets/pedigrees/{{ item.image }}" />
+      <img src="/assets/pets/{{ item.image }}" />
     </div>
   </div>
   {% else %}
