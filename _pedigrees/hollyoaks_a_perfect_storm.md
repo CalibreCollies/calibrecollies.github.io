@@ -1,7 +1,8 @@
 ---
-layout: collection
+layout: page
+title: GCH Hollyoaks A Perfect Storm At Calibre
+image: dog-pic28.jpg
 ---
-## GCH Hollyoaks A Perfect Storm At Calibre
 Windy
 2009 CCA National Specialty
 Winners Bitch Smooth

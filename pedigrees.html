@@ -1,6 +1,6 @@
 ---
 layout: collection
-title: Pedigrees
+title: Calibre Pedigrees
 permalink: /pedigrees/
 ---
 {% for item in site.pedigrees %}
@@ -22,4 +22,9 @@ permalink: /pedigrees/
     </div>
   </div>
   {% endif %}
+
+  {% if item.pedigree %}
+  <a href="/assets/pedigrees/{{ item.pedigree }}">View pedigree (PDF)</a>
+  {% endif %}
+  <hr />
 {% endfor %}
