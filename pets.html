@@ -1,17 +1,16 @@
 ---
 layout: collection
-title: Pets
+title: Calibre Collie owners are proud of their pets
 permalink: /pets/
 ---
-{% for item in site.pets %}
+{% for item in site.pets reversed %}
   {% if item.image %}
   <div class="row">
     <div class="small-8 columns">
-      <h4>{{ item.title }}</h4>
       {{ item.content }}
     </div>
     <div class="small-4 columns">
-      <img src="/assets/pets/{{ item.image }}" />
+      <img src="/assets/pets/{{ item.image }}", class="pet-pic" />
     </div>
   </div>
   {% else %}
@@ -22,4 +21,5 @@ permalink: /pets/
     </div>
   </div>
   {% endif %}
+  <hr>
 {% endfor %}
