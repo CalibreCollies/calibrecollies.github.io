@@ -1,8 +1,8 @@
 ---
 layout: page
+title: Harley
 image: harley.jpg
 ---
-### Harley
 
 Harley, who loves and owns the Shaulls' in Oklahoma, is their constant companion. It is his job to watch over
 Linda and David, and his fur brother, Bert.

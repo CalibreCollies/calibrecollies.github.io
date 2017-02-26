@@ -7,6 +7,7 @@ permalink: /pets/
   {% if item.image %}
   <div class="row">
     <div class="small-8 columns">
+      <h3>{{ item.title }}</h3>
       {{ item.content }}
     </div>
     <div class="small-4 columns">
@@ -16,10 +17,10 @@ permalink: /pets/
   {% else %}
   <div class="row item">
     <div class="small-12 columns">
-      <h4>{{ item.title }}</h4>
+      <h3>{{ item.title }}</h3>
       {{ item.content }}
     </div>
   </div>
   {% endif %}
-  <hr>
+  <hr />
 {% endfor %}
