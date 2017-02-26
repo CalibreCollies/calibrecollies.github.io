@@ -1,32 +1,27 @@
 ---
-layout: default
-title: News
+layout: collection
+title: Latest News
 permalink: /news/
 ---
-<div class="row news">
-  <div class="small-12 columns">
-    <h2>Latest News</h2>
-    {% for post in site.posts %}
-      {% if post.image %}
-      <div class="row post">
-        <div class="small-8 columns">
-          <h4>{{ post.title }}</h4>
-          <p class="subheader">{{ post.date | date: "%b %d, %Y" }}</p>
-          {{ post.content }}
-        </div>
-        <div class="small-4 columns">
-          <img src="/assets/posts/{{ post.image }}" />
-        </div>
-      </div>
-      {% else %}
-      <div class="row post">
-        <div class="small-12 columns">
-          <h4>{{ post.title }}</h4>
-          <p class="subheader">{{ post.date | date: "%b %d, %Y" }}</p>
-          {{ post.content }}
-        </div>
-      </div>
-      {% endif %}
-    {% endfor %}
+{% for post in site.posts %}
+  {% if post.image %}
+  <div class="row post">
+    <div class="small-8 columns">
+      <h4>{{ post.title }}</h4>
+      <p class="subheader">{{ post.date | date: "%b %d, %Y" }}</p>
+      {{ post.content }}
+    </div>
+    <div class="small-4 columns">
+      <img src="/assets/posts/{{ post.image }}" />
+    </div>
   </div>
-</div>
+  {% else %}
+  <div class="row post">
+    <div class="small-12 columns">
+      <h4>{{ post.title }}</h4>
+      <p class="subheader">{{ post.date | date: "%b %d, %Y" }}</p>
+      {{ post.content }}
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
