@@ -2,7 +2,9 @@
 layout: default
 ---
 <div class="row">
+  {% if page.title %}
   <h2 class="post-title">{{ page.title }}</h2>
+  {% endif %}
   {% if page.photo %}
   <div class="small-12 medium-8 columns">
     {{ content }}

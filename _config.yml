@@ -19,8 +19,10 @@ exclude:
   - Gemfile.lock
   - README.md
 collections:
+  - news
   - pedigrees
   - pets
+  - memories
 
 ## Customer Vars
 #ga_id:             ##-########-###

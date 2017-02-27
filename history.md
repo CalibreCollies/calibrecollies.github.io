@@ -3,13 +3,15 @@ layout: page
 title: History of Calibre Collies
 permalink: /history/
 ---
+<a href="/memory" class="memory">Gone but never forgotten</a>
+
 Calibre Collies began in 1978, under the former kennel name of Su-Mar Collies. Later it was changed to
 Calibre Collies, and became the home for many smooth collie champions and pointed rough collies.
 
 Calibre's Little Sister, a normal eyed, tri smooth bitch is the foundation of Calibre Collies. Weavil was with
 me for a very long time, born July 31, 1997 and leaving us June 11, 2010. Her presence is missed by us all.
 
-<h4>She leaves the following legacy:</h4>
+#### She leaves the following legacy:
 
 * CH Calibre's Secret of Life
 : Brood Bitch Winner at the CC of A 2003 National Specialty. CH Calibre's Secret of
@@ -38,7 +40,7 @@ Self Fulfilling Prophecy, and Calibre's Keeping the Faith.
 * Calibre's Judgement Day (ptd)
 : a CH Bethany's Preacher Man son
 
-<h4>Her adopted daughters:</h4>
+#### Her adopted daughters:
 * CH Silverhill Calibre How Sweet It Is
 * CH Hollyoaks A Perfect Storm At Calibre
 
