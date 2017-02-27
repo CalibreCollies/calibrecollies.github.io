@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: collection
 title: Salem finsihes his championship in Decatur, AL
 ---
 
