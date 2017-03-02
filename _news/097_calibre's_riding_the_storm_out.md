@@ -1,7 +1,0 @@
----
-layout: collection
-title: Calibre's Riding The Storm Out
-image: news-pic153.jpg
----
-
-R.E.O., blue rough dog sired by CH Fantasy's Fortune Hunter, ROM ex of GCH Hollyoaks A Perfect Storm At Calibre
