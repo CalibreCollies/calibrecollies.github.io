@@ -1,48 +1,31 @@
-<form>
+<form id="contact" action="https://formspree.io/f/mknkzkwq" method="POST">
   <input name='email' type='email' placeholder='Your email'>
   <input name='name' type='text' placeholder='Your name (optional)'>
   <input name='phone' type='text' placeholder='Your phone number (optional)'>
   <input name='address' type='text' placeholder='Your address (optional)' style='display:none' />
   <textarea type='text' name='message' placeholder='Your message'></textarea>
-  <button type='submit' class='button button-blue button-big mobile-block'>Send message</button>
+  <button id="contact-button" type='submit' class='button button-blue button-big mobile-block'>Send message</button>
   <input type='hidden' name='_subject' value='CalibreCollies Email' />
+  <p id="contact-status"></p>
 </form>
 
 <script>
-    var contactForm = document.querySelector('form');
-    var inputName = contactForm.querySelector('[name="name"]');
-    var inputEmail = contactForm.querySelector('[name="email"]');
-    var inputPhone = contactForm.querySelector('[name="phone"]');
-    var inputAddress = contactForm.querySelector('[name="address"]');
-    var textAreaMessage = contactForm.querySelector('[name="message"]');
-    var sendButton = contactForm.querySelector('button');
+    var form = document.getElementById("contact");
 
-    sendButton.addEventListener('click', function(event){
-      event.preventDefault(); // prevent the form to do the post.
-
-      sendButton.innerHTML = 'sending..';
-
-      var xhr = new XMLHttpRequest();
-      //xhr.open('POST', '//formspree.io/calibrecollies@kangaroobox.com', true);
-      xhr.open('POST', '//formspree.io/sckaelin@gmail.com', true);
-      xhr.setRequestHeader("Accept", "application/json")
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-
-      xhr.send(
-        "name=" + inputName.value +
-        "&email=" + inputEmail.value +
-        "&phone=" + inputPhone.value +
-        "&_gotcha=" + inputAddress.value +
-        "&message=" + textAreaMessage.value);
-
-      xhr.onloadend = function (res) {
-        if (res.target.status === 200){
-          sendButton.disabled = true;
-          sendButton.innerHTML = 'Message sent!';
-        }
-        else {
-          sendButton.innerHTML = 'Error!';
-        }
-      }
-    });
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("contact-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {'Accept': 'application/json'}
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
 </script>
