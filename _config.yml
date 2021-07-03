@@ -18,6 +18,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor
 collections:
   - news
   - pedigrees
